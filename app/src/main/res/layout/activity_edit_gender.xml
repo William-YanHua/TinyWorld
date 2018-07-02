@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditGender"
+    android:background="@mipmap/background1">
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/edit_gender"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/genders"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/circle_input"
+        >
+    </android.support.v7.widget.AppCompatSpinner>
+</android.support.constraint.ConstraintLayout>

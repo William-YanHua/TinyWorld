@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InformationView">
+        <attr name="left_logo" format="reference|integer"></attr>
+        <attr name="body_text" format="string"></attr>
+        <attr name="right_logo" format="reference|integer"></attr>
+    </declare-styleable>
+</resources>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeNickName"
+    android:background="@mipmap/background1">
+    <EditText
+        android:id="@+id/edit_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/pureWhite"
+        android:paddingLeft="5dp"
+        />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/edit_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择一个容易记住的名字呦！"/>
+
+</android.support.constraint.ConstraintLayout>

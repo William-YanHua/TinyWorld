@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:background="@mipmap/background"
+    android:gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/search_card_form"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/search_form"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/search_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/search_conditions"
+                android:prompt="@string/condition_prompt"
+                >
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/circle_input" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/search_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/search"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/circle_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/result_form"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/search_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+            <Button
+                android:id="@+id/return_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/returns"
+                android:textStyle="bold"
+                android:background="@drawable/circle_button"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

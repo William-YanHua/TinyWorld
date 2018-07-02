@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSigning"
+    android:background="@mipmap/background1">
+    <EditText
+        android:id="@+id/edit_signing"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/pureWhite"
+        android:paddingLeft="5dp"
+        />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/edit_signing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你的真知灼见一直是我们所想要达到的高度！"/>
+</android.support.constraint.ConstraintLayout>
